@@ -2,25 +2,16 @@
 
 using namespace std;
 
-main() {
+main()
+{
+    double lengthInches, lengthCentimeters;
 
-    int minValue, maxValue, elementToCheck;
-    bool isGreaterThanMinValue, isLowerThanMaxValue;
+    cout << "Length in inches: ";
+    cin >> lengthInches;
 
-    cout << "Please input the minimum value: ";
-    cin >> minValue;
-    cout << "Please input the maximum value: ";
-    cin >> maxValue;
-    cout << "Please input the number to check: ";
-    cin >> elementToCheck;
+    lengthCentimeters = lengthInches * 2.54;
 
-    isGreaterThanMinValue = (minValue <= elementToCheck);
-    isLowerThanMaxValue = (elementToCheck <= maxValue);
-
-    cout << "Is the value " << elementToCheck << " greater or equal to " << minValue << " ? " << isGreaterThanMinValue << endl;
-    cout << "Is the value " << elementToCheck << " lower or equal to " << maxValue << " ? " << isLowerThanMaxValue << endl;
-
-
+    cout << lengthInches << " inches is equal to " << lengthCentimeters << " centimeters.";
 
 }
 
