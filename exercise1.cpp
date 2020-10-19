@@ -4,14 +4,14 @@ using namespace std;
 
 main()
 {
-    double lengthInches, lengthCentimeters;
+    double lengthInInches, lengthCentimeters;
 
     cout << "Length in inches: ";
-    cin >> lengthInches;
+    cin >> lengthInInches;
 
-    lengthCentimeters = lengthInches * 2.54;
+    lengthCentimeters = lengthInInches * 4.86;
 
-    cout << lengthInches << " inches is equal to " << lengthCentimeters << " centimeters.";
+    cout << lengthInInches << " inches is equal to " << lengthCentimeters << " centimeters.";
 
 }
 
