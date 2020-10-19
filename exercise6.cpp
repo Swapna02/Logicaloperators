@@ -1,23 +1,17 @@
 #include <iostream>
-
-
 using namespace std;
-
-main()
+int main()
 {
-    double firstElement, secondElement, divisionResult;
+    double firstElement, secondElement, divisionResult; // declaring variables with datatype of Double (Shahzain Ahmed)
 
-    cout << "This is a simple division program." << endl;
-    cout << "Input first number: ";
-    cin >> firstElement;
+    cout << "This is a simple division program." << endl; // Cout used for displaying output (Shahzain Ahmed)
+    cout << "Input first number: "; 
+    cin >> firstElement; // Taking first input from the user (Shahzain Ahmed)
     cout << "Input second number: ";
-    cin >> secondElement;
+    cin >> secondElement; // Taking second input from the user (Shahzain Ahmed)
 
-    divisionResult = firstElement / secondElement;
+    divisionResult = firstElement / secondElement; // Formula for Division (Shahzain Ahmed)
     cout << "First number: " << firstElement << endl;
     cout << "Second number: " << secondElement << endl;
-    cout << "Division result: " << divisionResult << endl;
-
+    cout << "Division result: " << divisionResult << endl; // Displaying the final result after Division (Shahzain Ahmed)
 }
-
-
