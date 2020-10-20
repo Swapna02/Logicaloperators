@@ -17,5 +17,20 @@ int main
     lengthCentimeters = lengthInInches * 4.86;
 
     cout << lengthInInches << " inches is equal to " << lengthCentimeters << " centimeters.";
-
+=======
+    
+char input;
+int i = 0; 
+while ( i > -1 ){
+ cout << "Length in inches: ";
+double lengthInInches, lengthCentimeters;
+cin >> lengthInInches;
+lengthCentimeters = lengthInInches * 4.86;
+cout << lengthInInches << " inches is equal to " << lengthCentimeters << " centimeters."<< endl;;
+cout << "Do you want to try again? (y/n)"<< endl;
+cin >> input;
+if(input == 'n')
+break;
+i++;
+}
 }
