@@ -9,9 +9,13 @@ int main()
     cin >> firstElement; // Taking first input from the user (Shahzain Ahmed)
     cout << "Input second number: ";
     cin >> secondElement; // Taking second input from the user (Shahzain Ahmed)
-
-    divisionResult = firstElement / secondElement; // Formula for Division (Shahzain Ahmed)
+    
+    if(secondElement == 0) //Anything divided by 0 is undefined.
+    {    cout << "Invalid input " << endl;}
+    else     
+    { divisionResult = firstElement / secondElement; // Formula for Division (Shahzain Ahmed)
     cout << "First number: " << firstElement << endl;
     cout << "Second number: " << secondElement << endl;
-    cout << "Division result: " << divisionResult << endl; // Displaying the final result after Division (Shahzain Ahmed)
+    cout << "Division result: " << divisionResult << endl;} // Displaying the final result after Division (Shahzain Ahmed)
+    
 }
