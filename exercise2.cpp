@@ -7,8 +7,10 @@ main()
     double temperatureCelsius, temperatureFahrenheit, temperatureKelvin;
 
     cout << "Please input the temperature in Celsius: ";
-    cin >> temperatureCelsius;
+    cin >> temperatureCelsius; 
+    cout << "Please input the temperature in Fahrenheit: ";
     cin >> temperatureFahrenheit;
+    cout << "Please input the temperature in Kelvin: ";
     cin >> temperatureKelvin;
 
     temperatureFahrenheit = (temperatureCelsius + 9/5) - 32;
