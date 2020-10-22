@@ -1,18 +1,40 @@
-#include <iostream>
+# include <iostream>
 using namespace std;
+
 int main()
 {
-    double firstElement, secondElement, additionResult; // declaring variables with datatype of Double (Shahzain Ahmed)
+    char op;
+    float num1, num2;
+//SIMPLE PROGRAM FOR CREATING CALCULATOR USING SWITCH CASE
+    cout << "Enter operator either + or - or * or /: ";
+    cin >> op;
 
-    cout << "This is a simple addition program." << endl; // Displaying the String (Shahzain Ahmed)
-    cout << "Input first number: ";
-    cin >> firstElement; // taking first input from the user (Shahzain Ahmed)
-    cout << "Input second number: ";
-    cin >> secondElement; // taking second input from the user (Shahzain Ahmed)
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
 
-    additionResult = firstElement + secondElement; // Addition formula (Shahzain Ahmed)
-    cout << "First number: " << firstElement << endl;
-    cout << "Second number: " << secondElement << endl;
-    cout << "Addition result: " << additionResult << endl; // Displaying the final result after Addition (Shahzain Ahmed)
+    switch(op)
+    {
+        case '+':
+            cout << num1+num2;
+            break;
 
+        case '-':
+            cout << num1-num2;
+            break;
+
+        case '*':
+            cout << num1*num2;
+            break;
+
+        case '/':
+            cout << num1/num2;
+            break;
+
+        default:
+            // If the operator is other than +, -, * or /, error message is shown
+            cout << "Error! operator is not correct";
+            break;
+    }
+
+    return 0;
 }
